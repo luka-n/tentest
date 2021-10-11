@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tentest</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light mb-3 mt-3" style="background-color: #e3f2fd">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Tentest</span>
+        </div>
+      </nav>
+      <%= yield %>
+    </div>
+  </body>
+</html>

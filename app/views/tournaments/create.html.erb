@@ -1,0 +1,12 @@
+<% @tournament.each_with_index do |round, round_idx| %>
+  <h2><%= "Round #{round_idx + 1}" %></h2>
+  <table class="table">
+    <% round.each do |pair| %>
+      <tr>
+        <td><%= pair[0] %></td>
+        <td>vs</td>
+        <td><%= pair[1] %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>

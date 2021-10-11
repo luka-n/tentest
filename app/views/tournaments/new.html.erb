@@ -1,0 +1,8 @@
+<%= form_with url: "/tournaments", method: :post do |form| %>
+  <% 10.times do |i| %>
+    <div class="mb-3">
+      <%= form.text_field :"names[]", placeholder: "Player #{i + 1}", class: "form-control" %>
+    </div>
+  <% end %>
+  <%= form.submit "Generate", class: "btn btn-primary" %>
+<% end %>
